@@ -1,133 +1,140 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boss Beauty & Wellness Bar</title>
-  <meta name="description" content="Boss Beauty & Wellness Bar — informational resources on peptide research, beauty, wellness, recovery and weight-management research.">
-  <style>
-    :root{
-      --black:#080808; --black2:#111111; --gold:#d6ad55; --gold2:#f5df9a;
-      --white:#fff; --muted:#cfcfcf;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.6}
-    a{text-decoration:none;color:inherit}
-    header{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.96);border-bottom:1px solid #302512}
-    nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px 22px}
-    .brand{font-weight:800;letter-spacing:1.5px;color:var(--gold2);font-size:18px}
-    nav ul{display:flex;gap:24px;list-style:none;font-size:14px}
-    nav a:hover{color:var(--gold2)}
-    .hero{min-height:82vh;display:grid;place-items:center;text-align:center;padding:90px 20px;
-      background:radial-gradient(circle at center,#2a2110 0,#0b0b0b 40%,#080808 72%)}
-    .eyebrow{color:var(--gold2);letter-spacing:4px;font-size:13px;font-weight:700}
-    h1{font-size:clamp(42px,8vw,82px);line-height:1.03;margin:18px 0;
-      letter-spacing:2px;text-shadow:0 0 30px rgba(214,173,85,.16)}
-    .gold{color:var(--gold2)}
-    .hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:18px}
-    .buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
-    .btn{padding:13px 23px;border:1px solid var(--gold);border-radius:30px;font-weight:800;font-size:14px}
-    .btn.primary{background:var(--gold);color:#090909}
-    section{max-width:1100px;margin:auto;padding:78px 22px}
-    .section-title{text-align:center;margin-bottom:38px}
-    .section-title h2{font-size:34px}
-    .section-title p{color:#aaa;margin-top:8px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid #2d2618;border-radius:18px;padding:25px}
-    .card h3{color:var(--gold2);margin-bottom:9px}
-    .card p{color:#c6c6c6;font-size:15px}
-    .about{background:#f8f8f8;color:#111;max-width:none}
-    .about-inner{max-width:1100px;margin:auto;padding:78px 22px}
-    .about p{max-width:780px;margin:14px auto 0;text-align:center;color:#444}
-    .notice{border:1px solid #5b4721;background:#17130b;padding:25px;border-radius:16px;color:#ddd}
-    .notice strong{color:var(--gold2)}
-    .contact{text-align:center}
-    .contact-box{max-width:650px;margin:auto;background:#111;border:1px solid #332817;border-radius:20px;padding:32px}
-    .contact-box p{color:#bbb;margin:8px 0}
-    .contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
-    footer{border-top:1px solid #2c2518;text-align:center;padding:30px 20px;color:#888;font-size:12px}
-    @media(max-width:760px){
-      nav ul{display:none}.grid{grid-template-columns:1fr}section{padding:60px 18px}
-      .hero{min-height:75vh}.hero p{font-size:16px}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boss Beauty & Wellness Bar</title>
+<meta name="description" content="Boss Beauty & Wellness Bar — beauty, wellness and peptide research information.">
+<style>
+:root{--black:#070707;--black2:#121212;--gold:#d8a94d;--gold2:#ffe4a0;--white:#fff;--muted:#c9c9c9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(5,5,5,.94);backdrop-filter:blur(10px);border-bottom:1px solid #3a2b14}
+nav{max-width:1150px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;letter-spacing:1.5px;color:var(--gold2);font-size:17px}
+nav ul{list-style:none;display:flex;gap:25px;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.hero{min-height:88vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:35px;max-width:1250px;margin:auto;padding:55px 28px}
+.hero-copy{padding:25px}
+.eyebrow{font-size:12px;letter-spacing:4px;color:var(--gold2);font-weight:800}
+h1{font-size:clamp(42px,6vw,76px);line-height:.98;margin:18px 0;color:#fff}
+.gold{color:var(--gold2)}
+.hero-copy p{font-size:18px;color:var(--muted);max-width:610px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 22px;border-radius:30px;border:1px solid var(--gold);font-weight:800;font-size:13px}
+.btn.primary{background:var(--gold);color:#080808}
+.hero-photo{border:1px solid #4c3718;border-radius:24px;overflow:hidden;box-shadow:0 0 55px rgba(216,169,77,.13)}
+.hero-photo img{display:block;width:100%;height:auto}
+section{max-width:1120px;margin:auto;padding:78px 22px}
+.section-title{text-align:center;margin-bottom:38px}
+.section-title h2{font-size:35px}
+.section-title p{color:#aaa;margin-top:7px}
+.light{background:#f7f7f7;color:#111;max-width:none}
+.light-inner{max-width:1120px;margin:auto;padding:78px 22px}
+.light .section-title p{color:#555}
+.center-copy{max-width:780px;margin:auto;text-align:center;color:#444}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:25px;border-radius:18px;border:1px solid #332816;background:linear-gradient(145deg,#171717,#0d0d0d)}
+.card h3{color:var(--gold2);margin-bottom:8px}
+.card p{color:#c5c5c5;font-size:15px}
+.notice{background:#17130b;border:1px solid #60491f;border-radius:18px;padding:28px;color:#ddd}
+.notice strong{color:var(--gold2)}
+.contact{text-align:center}
+.contact-box{max-width:700px;margin:auto;padding:35px;border:1px solid #3b2c16;background:#111;border-radius:22px}
+.contact-box p{color:#bbb;margin:5px 0}
+.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+footer{border-top:1px solid #2d2416;text-align:center;padding:30px 20px;color:#888;font-size:12px}
+@media(max-width:800px){
+ nav ul{display:none}
+ .hero{grid-template-columns:1fr;padding:40px 18px}
+ .hero-copy{text-align:center;padding:10px}
+ .hero-copy p{margin:auto;font-size:16px}
+ .buttons{justify-content:center}
+ .grid{grid-template-columns:1fr}
+ section,.light-inner{padding:60px 18px}
+}
+</style>
 </head>
 <body>
 <header>
-  <nav>
-    <a class="brand" href="#home">BOSS BEAUTY ✦ WELLNESS</a>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+<a class="brand" href="#home">BOSS BEAUTY ✦ WELLNESS BAR</a>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
 
 <main>
-  <section class="hero" id="home">
-    <div>
-      <div class="eyebrow">BEAUTY • WELLNESS • RESEARCH</div>
-      <h1>BOSS BEAUTY<br><span class="gold">& WELLNESS BAR</span></h1>
-      <p>Informational resources focused on peptide research, beauty, wellness, recovery and weight-management research.</p>
-      <div class="buttons">
-        <a class="btn primary" href="#research">VIEW RESEARCH AREAS</a>
-        <a class="btn" href="#contact">CONTACT US</a>
-      </div>
-    </div>
-  </section>
+<section class="hero" id="home">
+<div class="hero-copy">
+<div class="eyebrow">BEAUTY • WELLNESS • RESEARCH</div>
+<h1>BOSS BEAUTY<br><span class="gold">& WELLNESS BAR</span></h1>
+<p>Informational resources focused on peptide research, beauty, wellness, recovery and weight-management research.</p>
+<div class="buttons">
+<a class="btn primary" href="#research">EXPLORE RESEARCH</a>
+<a class="btn" href="#contact">CONTACT US</a>
+</div>
+</div>
+<div class="hero-photo">
+<img src="boss-beauty-hero.jpg" alt="Boss Beauty and Wellness Bar branded image">
+</div>
+</section>
 
-  <section id="about" class="about">
-    <div class="about-inner">
-      <div class="section-title">
-        <h2>ABOUT <span class="gold">BOSS BEAUTY</span></h2>
-      </div>
-      <p>Boss Beauty & Wellness Bar provides educational and informational resources centered around peptide research and related beauty and wellness topics.</p>
-      <p>Our focus is on clear information, research awareness and responsible communication.</p>
-    </div>
-  </section>
+<section class="light" id="about">
+<div class="light-inner">
+<div class="section-title"><h2>ABOUT <span class="gold">BOSS BEAUTY</span></h2></div>
+<div class="center-copy">
+<p>Boss Beauty & Wellness Bar provides educational and informational resources centered around peptide research and related beauty and wellness topics.</p>
+<p style="margin-top:14px">Our focus is on clear information, research awareness and responsible communication.</p>
+</div>
+</div>
+</section>
 
-  <section id="research">
-    <div class="section-title">
-      <h2>RESEARCH <span class="gold">AREAS</span></h2>
-      <p>Explore the areas covered by our informational resources.</p>
-    </div>
-    <div class="grid">
-      <div class="card"><h3>✨ Beauty & Skin</h3><p>Research information related to skin appearance, rejuvenation and cosmetic-focused compounds.</p></div>
-      <div class="card"><h3>🧬 Peptide Research</h3><p>Educational information about peptides, their research applications and current areas of study.</p></div>
-      <div class="card"><h3>⚡ Wellness & Recovery</h3><p>Resources covering research topics associated with recovery, wellness and performance.</p></div>
-      <div class="card"><h3>⚖️ Weight-Management Research</h3><p>Informational resources about compounds being studied in weight-management research.</p></div>
-      <div class="card"><h3>💎 Hair Research</h3><p>Educational content focused on compounds researched for hair and scalp applications.</p></div>
-      <div class="card"><h3>🔬 General Research</h3><p>Research-oriented information intended to help visitors learn more about peptide-related topics.</p></div>
-    </div>
-  </section>
+<section id="research">
+<div class="section-title">
+<h2>RESEARCH <span class="gold">AREAS</span></h2>
+<p>Explore the areas covered by our informational resources.</p>
+</div>
+<div class="grid">
+<div class="card"><h3>✨ Beauty & Skin</h3><p>Research information related to skin appearance, rejuvenation and cosmetic-focused compounds.</p></div>
+<div class="card"><h3>🧬 Peptide Research</h3><p>Educational information about peptides, their research applications and current areas of study.</p></div>
+<div class="card"><h3>⚡ Wellness & Recovery</h3><p>Resources covering research topics associated with recovery, wellness and performance.</p></div>
+<div class="card"><h3>⚖️ Weight-Management Research</h3><p>Informational resources about compounds being studied in weight-management research.</p></div>
+<div class="card"><h3>💎 Hair Research</h3><p>Educational content focused on compounds researched for hair and scalp applications.</p></div>
+<div class="card"><h3>🔬 General Research</h3><p>Research-oriented information intended to help visitors learn more about peptide-related topics.</p></div>
+</div>
+</section>
 
-  <section>
-    <div class="notice">
-      <strong>IMPORTANT RESEARCH NOTICE</strong><br><br>
-      Products and information referenced by this website are presented for laboratory research and educational purposes only. They are not intended for human or veterinary consumption, diagnosis, treatment, cure or prevention of disease. Visitors are responsible for understanding and complying with applicable laws and regulations.
-    </div>
-  </section>
+<section>
+<div class="notice">
+<strong>IMPORTANT RESEARCH NOTICE</strong><br><br>
+Products and information referenced by this website are presented for laboratory research and educational purposes only. They are not intended for human or veterinary consumption, diagnosis, treatment, cure or prevention of disease. Visitors are responsible for understanding and complying with applicable laws and regulations.
+</div>
+</section>
 
-  <section id="contact" class="contact">
-    <div class="section-title">
-      <h2>GET IN <span class="gold">TOUCH</span></h2>
-      <p>Questions or general research inquiries? Reach out through your preferred channel.</p>
-    </div>
-    <div class="contact-box">
-      <p><strong>WhatsApp</strong></p>
-      <p>920-930-9694</p>
-      <div class="contact-links">
-        <a class="btn primary" href="https://wa.me/19209309694" target="_blank" rel="noopener">MESSAGE ON WHATSAPP</a>
-        <a class="btn" href="https://www.instagram.com/IslasAngelica/" target="_blank" rel="noopener">INSTAGRAM</a>
-        <a class="btn" href="https://www.facebook.com/" target="_blank" rel="noopener">FACEBOOK</a>
-      </div>
-    </div>
-  </section>
+<section id="contact" class="contact">
+<div class="section-title">
+<h2>GET IN <span class="gold">TOUCH</span></h2>
+<p>Questions or general research inquiries? Reach out through your preferred channel.</p>
+</div>
+<div class="contact-box">
+<p><strong>WhatsApp</strong></p>
+<p>920-930-9694</p>
+<div class="contact-links">
+<a class="btn primary" href="https://wa.me/19209309694" target="_blank" rel="noopener">MESSAGE ON WHATSAPP</a>
+<a class="btn" href="https://www.instagram.com/IslasAngelica/" target="_blank" rel="noopener">INSTAGRAM</a>
+<a class="btn" href="https://www.facebook.com/" target="_blank" rel="noopener">FACEBOOK</a>
+</div>
+</div>
+</section>
 </main>
 
-<footer>
-  © 2026 Boss Beauty & Wellness Bar • Informational / Research Use Only
-</footer>
+<footer>© 2026 Boss Beauty & Wellness Bar • Informational / Research Use Only</footer>
 </body>
 </html>
